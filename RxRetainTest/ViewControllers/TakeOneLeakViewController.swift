@@ -1,23 +1,28 @@
 import UIKit
 import RxSwift
-import RxCocoa
 
-class TakeOneStrongReferenceLeakViewController: UIViewController {
+
+class TakeOneLeakViewController: UIViewController {
     
-    @IBOutlet private weak var popButton: UIButton!
+    private let presenter = Presenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        _ = self.popButton.rx.tap
+        _ = self.presenter.viewIsReady()
+            .debug()
             .take(1)
-            .subscribe(onNext: { [weak self] in
-                self?.pop()
+            .subscribe(onNext: {
+                self.doSomething()
             })
     }
     
-    private func pop() {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func tapDoSomething() {
+        self.presenter.userDoSomething()
+    }
+    
+    private func doSomething() {
+        print("Do something")
     }
     
 }

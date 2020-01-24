@@ -1,23 +1,23 @@
 import UIKit
 import RxSwift
-import RxCocoa
+
 
 class NoApparentLeakViewController: UIViewController {
     
-    @IBOutlet private weak var popButton: UIButton!
-    
+    private let presenter = Presenter()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.popButton.rx.tap
-            .subscribe(onNext: pop)
+        self.presenter.viewIsReady()
+            .debug()
+            .subscribe(onNext: doSomething) // self strong reference
             .disposed(by: self.disposeBag)
     }
     
-    private func pop() {
-        self.navigationController?.popViewController(animated: true)
+    private func doSomething() {
+        print("Doing Something")
     }
     
 }

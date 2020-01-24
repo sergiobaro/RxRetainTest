@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D916250823D9CF2D008F2F0C /* NoApparentLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */; };
+		D920495623DADC12008BBCD5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920495523DADC12008BBCD5 /* Presenter.swift */; };
 		D924E42A23D9CACC001BB906 /* StrongReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */; };
 		D924E42E23D9CC32001BB906 /* TakeOneLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */; };
-		D924E43023D9CD74001BB906 /* NoDisposeLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42F23D9CD74001BB906 /* NoDisposeLeakViewController.swift */; };
 		D9269FE623D9C6BA00CBFC9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9269FE523D9C6BA00CBFC9B /* AppDelegate.swift */; };
 		D9269FE823D9C6BA00CBFC9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9269FE723D9C6BA00CBFC9B /* SceneDelegate.swift */; };
 		D9269FED23D9C6BA00CBFC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FEB23D9C6BA00CBFC9B /* Main.storyboard */; };
@@ -18,14 +18,14 @@
 		D9269FF223D9C6BC00CBFC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FF023D9C6BC00CBFC9B /* LaunchScreen.storyboard */; };
 		D9269FFB23D9C6F900CBFC9B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFA23D9C6F900CBFC9B /* RxSwift */; };
 		D9269FFD23D9C6F900CBFC9B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFC23D9C6F900CBFC9B /* RxCocoa */; };
-		D926A00123D9CA7A00CBFC9B /* DisposeLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926A00023D9CA7A00CBFC9B /* DisposeLeakViewController.swift */; };
+		D926A00123D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoApparentLeakViewController.swift; sourceTree = "<group>"; };
+		D920495523DADC12008BBCD5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferenceLeakViewController.swift; sourceTree = "<group>"; };
 		D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOneLeakViewController.swift; sourceTree = "<group>"; };
-		D924E42F23D9CD74001BB906 /* NoDisposeLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDisposeLeakViewController.swift; sourceTree = "<group>"; };
 		D9269FE223D9C6BA00CBFC9B /* RxRetainTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxRetainTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9269FE523D9C6BA00CBFC9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9269FE723D9C6BA00CBFC9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		D9269FEE23D9C6BC00CBFC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9269FF123D9C6BC00CBFC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9269FF323D9C6BC00CBFC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D926A00023D9CA7A00CBFC9B /* DisposeLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposeLeakViewController.swift; sourceTree = "<group>"; };
+		D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakReferenceLeakViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */,
-				D926A00023D9CA7A00CBFC9B /* DisposeLeakViewController.swift */,
+				D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */,
 				D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */,
 				D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */,
-				D924E42F23D9CD74001BB906 /* NoDisposeLeakViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -86,6 +85,7 @@
 				D9269FEE23D9C6BC00CBFC9B /* Assets.xcassets */,
 				D9269FF023D9C6BC00CBFC9B /* LaunchScreen.storyboard */,
 				D9269FF323D9C6BC00CBFC9B /* Info.plist */,
+				D920495523DADC12008BBCD5 /* Presenter.swift */,
 				D924E43123D9CEC6001BB906 /* ViewControllers */,
 			);
 			path = RxRetainTest;
@@ -171,9 +171,9 @@
 			files = (
 				D9269FE623D9C6BA00CBFC9B /* AppDelegate.swift in Sources */,
 				D916250823D9CF2D008F2F0C /* NoApparentLeakViewController.swift in Sources */,
+				D920495623DADC12008BBCD5 /* Presenter.swift in Sources */,
 				D9269FE823D9C6BA00CBFC9B /* SceneDelegate.swift in Sources */,
-				D926A00123D9CA7A00CBFC9B /* DisposeLeakViewController.swift in Sources */,
-				D924E43023D9CD74001BB906 /* NoDisposeLeakViewController.swift in Sources */,
+				D926A00123D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift in Sources */,
 				D924E42E23D9CC32001BB906 /* TakeOneLeakViewController.swift in Sources */,
 				D924E42A23D9CACC001BB906 /* StrongReferenceLeakViewController.swift in Sources */,
 			);

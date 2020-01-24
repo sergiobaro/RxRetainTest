@@ -2,20 +2,19 @@ import UIKit
 import RxSwift
 
 
-class StrongReferenceLeakViewController: UIViewController {
+class WeakReferenceLeakViewController: UIViewController {
     
     private let presenter = Presenter()
-    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter.viewIsReady()
+        _ = self.presenter.viewIsReady()
             .debug()
-            .subscribe(onNext: {
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else { return }
                 self.doSomething()
             })
-            .disposed(by: self.disposeBag)
     }
     
     private func doSomething() {
@@ -23,4 +22,3 @@ class StrongReferenceLeakViewController: UIViewController {
     }
     
 }
-

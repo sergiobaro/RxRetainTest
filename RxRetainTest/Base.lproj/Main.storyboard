@@ -43,7 +43,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Dispose Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhY-IL-Yad">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Weak Reference Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhY-IL-Yad">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -116,26 +116,6 @@
                                             <segue destination="hCh-eT-0fl" kind="show" id="olR-3b-g7e"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="54h-TL-8ix" style="IBUITableViewCellStyleDefault" id="nVZ-ib-cWG">
-                                        <rect key="frame" x="0.0" y="202" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nVZ-ib-cWG" id="14i-mL-jN4">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="No Dispose Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54h-TL-8ix">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="lF6-Ge-o3T" kind="show" id="UuI-Tz-Cs5"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -150,32 +130,19 @@
             </objects>
             <point key="canvasLocation" x="1054" y="127"/>
         </scene>
-        <!--Dispose Leak View Controller-->
+        <!--Weak Reference Leak View Controller-->
         <scene sceneID="gOM-cU-0xG">
             <objects>
-                <viewController id="N4Y-GD-VjE" customClass="DisposeLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-Ud-bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="N4Y-GD-VjE" customClass="WeakReferenceLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ytZ-OL-kCa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXD-0p-HOe">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Pop"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="bXD-0p-HOe" firstAttribute="centerX" secondItem="ytZ-OL-kCa" secondAttribute="centerX" id="pRY-iJ-kwy"/>
-                            <constraint firstItem="bXD-0p-HOe" firstAttribute="centerY" secondItem="ytZ-OL-kCa" secondAttribute="centerY" id="vD5-EW-P6b"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lEW-uL-MlR"/>
                     </view>
                     <navigationItem key="navigationItem" id="VvS-0Y-nmW"/>
-                    <connections>
-                        <outlet property="popButton" destination="bXD-0p-HOe" id="x4i-be-eQQ"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-Ud-bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1710" y="-717"/>
         </scene>
@@ -186,23 +153,10 @@
                     <view key="view" contentMode="scaleToFill" id="d58-SN-0AQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16e-AH-7qa">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Pop"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="16e-AH-7qa" firstAttribute="centerY" secondItem="d58-SN-0AQ" secondAttribute="centerY" id="0sX-fk-Fnu"/>
-                            <constraint firstItem="16e-AH-7qa" firstAttribute="centerX" secondItem="d58-SN-0AQ" secondAttribute="centerX" id="CDI-ND-d9b"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Gc-bk-qKk"/>
                     </view>
                     <navigationItem key="navigationItem" id="AMl-5k-4eL"/>
-                    <connections>
-                        <outlet property="popButton" destination="16e-AH-7qa" id="sIT-WK-gtj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAQ-dG-ZcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,89 +165,47 @@
         <!--No Apparent Leak View Controller-->
         <scene sceneID="j5h-AA-dNz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbD-G7-LMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="x3y-bg-iPm" customClass="NoApparentLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwR-UC-I5U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiA-Fw-XfI">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Pop"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="FiA-Fw-XfI" firstAttribute="centerX" secondItem="nwR-UC-I5U" secondAttribute="centerX" id="Ne8-dj-adB"/>
-                            <constraint firstItem="FiA-Fw-XfI" firstAttribute="centerY" secondItem="nwR-UC-I5U" secondAttribute="centerY" id="ppF-gZ-Qzk"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dar-eR-cfw"/>
                     </view>
                     <navigationItem key="navigationItem" id="hA5-eC-EkT"/>
-                    <connections>
-                        <outlet property="popButton" destination="FiA-Fw-XfI" id="PZ2-7M-jOE"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbD-G7-LMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="992"/>
         </scene>
-        <!--Take One Strong Reference Leak View Controller-->
+        <!--Take One Leak View Controller-->
         <scene sceneID="1e5-Vp-c5I">
             <objects>
-                <viewController id="hCh-eT-0fl" customClass="TakeOneStrongReferenceLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hCh-eT-0fl" customClass="TakeOneLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kJL-cg-lSr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKc-tY-PlZ">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Pop"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-yZ-tvf">
+                                <rect key="frame" x="158" y="433" width="98" height="30"/>
+                                <state key="normal" title="Do Something"/>
+                                <connections>
+                                    <action selector="tapDoSomething" destination="hCh-eT-0fl" eventType="touchUpInside" id="SpP-Ea-lS8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kKc-tY-PlZ" firstAttribute="centerY" secondItem="kJL-cg-lSr" secondAttribute="centerY" id="Q6m-2K-5di"/>
-                            <constraint firstItem="kKc-tY-PlZ" firstAttribute="centerX" secondItem="kJL-cg-lSr" secondAttribute="centerX" id="puj-oB-V86"/>
+                            <constraint firstItem="1oe-yZ-tvf" firstAttribute="centerY" secondItem="kJL-cg-lSr" secondAttribute="centerY" id="Qiq-pp-vmz"/>
+                            <constraint firstItem="1oe-yZ-tvf" firstAttribute="centerX" secondItem="kJL-cg-lSr" secondAttribute="centerX" id="n8n-pm-vCj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sL4-gW-gb8"/>
                     </view>
                     <navigationItem key="navigationItem" id="g5C-iO-4OO"/>
-                    <connections>
-                        <outlet property="popButton" destination="kKc-tY-PlZ" id="YsL-To-x58"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRC-gm-uMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2333" y="639"/>
-        </scene>
-        <!--No Dispose Strong Reference Leak View Controller-->
-        <scene sceneID="iww-vB-GHa">
-            <objects>
-                <viewController id="lF6-Ge-o3T" customClass="NoDisposeStrongReferenceLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W6O-dY-3Ak">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLP-s0-3CM">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Pop"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="hLP-s0-3CM" firstAttribute="centerY" secondItem="W6O-dY-3Ak" secondAttribute="centerY" id="GHb-L2-eBE"/>
-                            <constraint firstItem="hLP-s0-3CM" firstAttribute="centerX" secondItem="W6O-dY-3Ak" secondAttribute="centerX" id="HzZ-0O-cqk"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="VP3-6w-cPw"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZjT-Ui-Lsx"/>
-                    <connections>
-                        <outlet property="popButton" destination="hLP-s0-3CM" id="dZe-fQ-mn3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D0h-5l-2fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2364" y="-69"/>
         </scene>
     </scenes>
 </document>
