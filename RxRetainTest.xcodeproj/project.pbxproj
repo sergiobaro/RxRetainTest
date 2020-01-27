@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451A38D325769382EB609739 /* Pods_RxRetainTest_RxRetainTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD131091798FF55890027932 /* Pods_RxRetainTest_RxRetainTestTests.framework */; };
 		D916250823D9CF2D008F2F0C /* NoApparentLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */; };
 		D920495623DADC12008BBCD5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920495523DADC12008BBCD5 /* Presenter.swift */; };
 		D924E42A23D9CACC001BB906 /* StrongReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */; };
@@ -16,12 +17,27 @@
 		D9269FED23D9C6BA00CBFC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FEB23D9C6BA00CBFC9B /* Main.storyboard */; };
 		D9269FEF23D9C6BC00CBFC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9269FEE23D9C6BC00CBFC9B /* Assets.xcassets */; };
 		D9269FF223D9C6BC00CBFC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FF023D9C6BC00CBFC9B /* LaunchScreen.storyboard */; };
-		D9269FFB23D9C6F900CBFC9B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFA23D9C6F900CBFC9B /* RxSwift */; };
-		D9269FFD23D9C6F900CBFC9B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFC23D9C6F900CBFC9B /* RxCocoa */; };
+		D9269FFB23D9C6F900CBFC9B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */; };
+		D9269FFD23D9C6F900CBFC9B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */; };
 		D926A00123D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */; };
+		D9C0BE4323DF414B00A43491 /* RxRetainTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0BE4223DF414B00A43491 /* RxRetainTestTests.swift */; };
+		F58A7838E1E609EBB53B5892 /* Pods_RxRetainTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9AFEB18EAA7BFB87F55909 /* Pods_RxRetainTest.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D9C0BE4523DF414B00A43491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9269FDA23D9C6BA00CBFC9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9269FE123D9C6BA00CBFC9B;
+			remoteInfo = RxRetainTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		738C2EAAEC8F1EC721F395B3 /* Pods-RxRetainTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest.release.xcconfig"; path = "Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest.release.xcconfig"; sourceTree = "<group>"; };
+		AD131091798FF55890027932 /* Pods_RxRetainTest_RxRetainTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRetainTest_RxRetainTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35D2F6F0845FA316DFED66E /* Pods-RxRetainTest-RxRetainTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest-RxRetainTestTests.release.xcconfig"; path = "Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoApparentLeakViewController.swift; sourceTree = "<group>"; };
 		D920495523DADC12008BBCD5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferenceLeakViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +50,12 @@
 		D9269FF123D9C6BC00CBFC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9269FF323D9C6BC00CBFC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakReferenceLeakViewController.swift; sourceTree = "<group>"; };
+		D9C0BE4023DF414B00A43491 /* RxRetainTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRetainTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C0BE4223DF414B00A43491 /* RxRetainTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRetainTestTests.swift; sourceTree = "<group>"; };
+		D9C0BE4423DF414B00A43491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9AFEB18EAA7BFB87F55909 /* Pods_RxRetainTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRetainTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64112FAABDA22C45496A157 /* Pods-RxRetainTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest.debug.xcconfig"; path = "Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5A8419FD586390C446078A /* Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,14 +63,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9269FFD23D9C6F900CBFC9B /* RxCocoa in Frameworks */,
-				D9269FFB23D9C6F900CBFC9B /* RxSwift in Frameworks */,
+				D9269FFD23D9C6F900CBFC9B /* BuildFile in Frameworks */,
+				D9269FFB23D9C6F900CBFC9B /* BuildFile in Frameworks */,
+				F58A7838E1E609EBB53B5892 /* Pods_RxRetainTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C0BE3D23DF414B00A43491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451A38D325769382EB609739 /* Pods_RxRetainTest_RxRetainTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C127A5E1FECC487076A1A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9AFEB18EAA7BFB87F55909 /* Pods_RxRetainTest.framework */,
+				AD131091798FF55890027932 /* Pods_RxRetainTest_RxRetainTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B018184567A09E38FA18E244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E64112FAABDA22C45496A157 /* Pods-RxRetainTest.debug.xcconfig */,
+				738C2EAAEC8F1EC721F395B3 /* Pods-RxRetainTest.release.xcconfig */,
+				EE5A8419FD586390C446078A /* Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig */,
+				B35D2F6F0845FA316DFED66E /* Pods-RxRetainTest-RxRetainTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D924E43123D9CEC6001BB906 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				D9269FE423D9C6BA00CBFC9B /* RxRetainTest */,
+				D9C0BE4123DF414B00A43491 /* RxRetainTestTests */,
 				D9269FE323D9C6BA00CBFC9B /* Products */,
+				B018184567A09E38FA18E244 /* Pods */,
+				1C127A5E1FECC487076A1A79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D9269FE223D9C6BA00CBFC9B /* RxRetainTest.app */,
+				D9C0BE4023DF414B00A43491 /* RxRetainTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +146,15 @@
 			path = RxRetainTest;
 			sourceTree = "<group>";
 		};
+		D9C0BE4123DF414B00A43491 /* RxRetainTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C0BE4223DF414B00A43491 /* RxRetainTestTests.swift */,
+				D9C0BE4423DF414B00A43491 /* Info.plist */,
+			);
+			path = RxRetainTestTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9269FF623D9C6BC00CBFC9B /* Build configuration list for PBXNativeTarget "RxRetainTest" */;
 			buildPhases = (
+				353682C97ED0CF0B4051CF30 /* [CP] Check Pods Manifest.lock */,
 				D9269FDE23D9C6BA00CBFC9B /* Sources */,
 				D9269FDF23D9C6BA00CBFC9B /* Frameworks */,
 				D9269FE023D9C6BA00CBFC9B /* Resources */,
+				DA0EE9FEF353D101634BD2C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,12 +174,32 @@
 			);
 			name = RxRetainTest;
 			packageProductDependencies = (
-				D9269FFA23D9C6F900CBFC9B /* RxSwift */,
-				D9269FFC23D9C6F900CBFC9B /* RxCocoa */,
+				D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */,
+				D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */,
 			);
 			productName = RxRetainTest;
 			productReference = D9269FE223D9C6BA00CBFC9B /* RxRetainTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D9C0BE3F23DF414B00A43491 /* RxRetainTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C0BE4923DF414B00A43491 /* Build configuration list for PBXNativeTarget "RxRetainTestTests" */;
+			buildPhases = (
+				9E33E144AEF3C63BE8829506 /* [CP] Check Pods Manifest.lock */,
+				D9C0BE3C23DF414B00A43491 /* Sources */,
+				D9C0BE3D23DF414B00A43491 /* Frameworks */,
+				D9C0BE3E23DF414B00A43491 /* Resources */,
+				69319AB1FA590CD6887DFE8B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C0BE4623DF414B00A43491 /* PBXTargetDependency */,
+			);
+			name = RxRetainTestTests;
+			productName = RxRetainTestTests;
+			productReference = D9C0BE4023DF414B00A43491 /* RxRetainTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -128,6 +214,10 @@
 					D9269FE123D9C6BA00CBFC9B = {
 						CreatedOnToolsVersion = 11.3;
 					};
+					D9C0BE3F23DF414B00A43491 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D9269FE123D9C6BA00CBFC9B;
+					};
 				};
 			};
 			buildConfigurationList = D9269FDD23D9C6BA00CBFC9B /* Build configuration list for PBXProject "RxRetainTest" */;
@@ -140,13 +230,14 @@
 			);
 			mainGroup = D9269FD923D9C6BA00CBFC9B;
 			packageReferences = (
-				D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = D9269FE323D9C6BA00CBFC9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D9269FE123D9C6BA00CBFC9B /* RxRetainTest */,
+				D9C0BE3F23DF414B00A43491 /* RxRetainTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,7 +253,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9C0BE3E23DF414B00A43491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		353682C97ED0CF0B4051CF30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxRetainTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69319AB1FA590CD6887DFE8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E33E144AEF3C63BE8829506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxRetainTest-RxRetainTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0EE9FEF353D101634BD2C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9269FDE23D9C6BA00CBFC9B /* Sources */ = {
@@ -179,7 +358,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9C0BE3C23DF414B00A43491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C0BE4323DF414B00A43491 /* RxRetainTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9C0BE4623DF414B00A43491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9269FE123D9C6BA00CBFC9B /* RxRetainTest */;
+			targetProxy = D9C0BE4523DF414B00A43491 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D9269FEB23D9C6BA00CBFC9B /* Main.storyboard */ = {
@@ -317,6 +512,7 @@
 		};
 		D9269FF723D9C6BC00CBFC9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64112FAABDA22C45496A157 /* Pods-RxRetainTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +530,7 @@
 		};
 		D9269FF823D9C6BC00CBFC9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738C2EAAEC8F1EC721F395B3 /* Pods-RxRetainTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +543,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D9C0BE4723DF414B00A43491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5A8419FD586390C446078A /* Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRetainTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocv.RxRetainTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxRetainTest.app/RxRetainTest";
+			};
+			name = Debug;
+		};
+		D9C0BE4823DF414B00A43491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35D2F6F0845FA316DFED66E /* Pods-RxRetainTest-RxRetainTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxRetainTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocv.RxRetainTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxRetainTest.app/RxRetainTest";
 			};
 			name = Release;
 		};
@@ -370,10 +607,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D9C0BE4923DF414B00A43491 /* Build configuration list for PBXNativeTarget "RxRetainTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C0BE4723DF414B00A43491 /* Debug */,
+				D9C0BE4823DF414B00A43491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -384,14 +630,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D9269FFA23D9C6F900CBFC9B /* RxSwift */ = {
+		D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */;
 			productName = RxSwift;
 		};
-		D9269FFC23D9C6F900CBFC9B /* RxCocoa */ = {
+		D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */;
 			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
