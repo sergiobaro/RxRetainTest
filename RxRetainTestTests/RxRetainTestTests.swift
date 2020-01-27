@@ -12,7 +12,7 @@ class SomeViewControllerTests: QuickSpec {
             let vc = LeakTest {
                 return StrongReferenceLeakViewController()
             }
-            it("must not leak") {
+            it("must leak") {
                 expect(vc).to(leak())
             }
         }
@@ -21,7 +21,7 @@ class SomeViewControllerTests: QuickSpec {
             let vc = LeakTest {
                 return NoApparentLeakViewController()
             }
-            it("must not leak") {
+            it("must leak") {
                 expect(vc).to(leak())
             }
         }
@@ -30,7 +30,7 @@ class SomeViewControllerTests: QuickSpec {
             let vc = LeakTest {
                 return NoApparentLeakViewController()
             }
-            it("must not leak") {
+            it("must leak") {
                 expect(vc).to(leak())
             }
         }
@@ -39,7 +39,7 @@ class SomeViewControllerTests: QuickSpec {
             let vc = LeakTest {
                 return NoApparentLeakViewController()
             }
-            it("must not leak") {
+            it("must leak") {
                 expect(vc).to(leak())
             }
         }
