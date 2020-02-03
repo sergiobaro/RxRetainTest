@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		451A38D325769382EB609739 /* Pods_RxRetainTest_RxRetainTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD131091798FF55890027932 /* Pods_RxRetainTest_RxRetainTestTests.framework */; };
-		D916250823D9CF2D008F2F0C /* NoApparentLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */; };
+		D916250823D9CF2D008F2F0C /* FunctionParameterLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916250723D9CF2D008F2F0C /* FunctionParameterLeakViewController.swift */; };
 		D920495623DADC12008BBCD5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920495523DADC12008BBCD5 /* Presenter.swift */; };
 		D924E42A23D9CACC001BB906 /* StrongReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */; };
 		D924E42E23D9CC32001BB906 /* TakeOneLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */; };
@@ -17,10 +17,11 @@
 		D9269FED23D9C6BA00CBFC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FEB23D9C6BA00CBFC9B /* Main.storyboard */; };
 		D9269FEF23D9C6BC00CBFC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9269FEE23D9C6BC00CBFC9B /* Assets.xcassets */; };
 		D9269FF223D9C6BC00CBFC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9269FF023D9C6BC00CBFC9B /* LaunchScreen.storyboard */; };
-		D9269FFB23D9C6F900CBFC9B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */; };
-		D9269FFD23D9C6F900CBFC9B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */; };
+		D9269FFB23D9C6F900CBFC9B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFA23D9C6F900CBFC9B /* RxSwift */; };
+		D9269FFD23D9C6F900CBFC9B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D9269FFC23D9C6F900CBFC9B /* RxCocoa */; };
 		D926A00123D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */; };
 		D9C0BE4323DF414B00A43491 /* RxRetainTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0BE4223DF414B00A43491 /* RxRetainTestTests.swift */; };
+		D9FCEF9F23E806A5000489CD /* NotificationLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEF9E23E806A5000489CD /* NotificationLeakViewController.swift */; };
 		F58A7838E1E609EBB53B5892 /* Pods_RxRetainTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9AFEB18EAA7BFB87F55909 /* Pods_RxRetainTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +39,7 @@
 		738C2EAAEC8F1EC721F395B3 /* Pods-RxRetainTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest.release.xcconfig"; path = "Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest.release.xcconfig"; sourceTree = "<group>"; };
 		AD131091798FF55890027932 /* Pods_RxRetainTest_RxRetainTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRetainTest_RxRetainTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35D2F6F0845FA316DFED66E /* Pods-RxRetainTest-RxRetainTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest-RxRetainTestTests.release.xcconfig"; path = "Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests.release.xcconfig"; sourceTree = "<group>"; };
-		D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoApparentLeakViewController.swift; sourceTree = "<group>"; };
+		D916250723D9CF2D008F2F0C /* FunctionParameterLeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionParameterLeakViewController.swift; sourceTree = "<group>"; };
 		D920495523DADC12008BBCD5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferenceLeakViewController.swift; sourceTree = "<group>"; };
 		D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOneLeakViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		D9C0BE4023DF414B00A43491 /* RxRetainTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxRetainTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C0BE4223DF414B00A43491 /* RxRetainTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRetainTestTests.swift; sourceTree = "<group>"; };
 		D9C0BE4423DF414B00A43491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FCEF9E23E806A5000489CD /* NotificationLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLeakViewController.swift; sourceTree = "<group>"; };
 		DD9AFEB18EAA7BFB87F55909 /* Pods_RxRetainTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRetainTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64112FAABDA22C45496A157 /* Pods-RxRetainTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest.debug.xcconfig"; path = "Target Support Files/Pods-RxRetainTest/Pods-RxRetainTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EE5A8419FD586390C446078A /* Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RxRetainTest-RxRetainTestTests/Pods-RxRetainTest-RxRetainTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9269FFD23D9C6F900CBFC9B /* BuildFile in Frameworks */,
-				D9269FFB23D9C6F900CBFC9B /* BuildFile in Frameworks */,
+				D9269FFD23D9C6F900CBFC9B /* RxCocoa in Frameworks */,
+				D9269FFB23D9C6F900CBFC9B /* RxSwift in Frameworks */,
 				F58A7838E1E609EBB53B5892 /* Pods_RxRetainTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,10 +105,11 @@
 		D924E43123D9CEC6001BB906 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D916250723D9CF2D008F2F0C /* NoApparentLeakViewController.swift */,
+				D916250723D9CF2D008F2F0C /* FunctionParameterLeakViewController.swift */,
 				D926A00023D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift */,
 				D924E42923D9CACC001BB906 /* StrongReferenceLeakViewController.swift */,
 				D924E42D23D9CC32001BB906 /* TakeOneLeakViewController.swift */,
+				D9FCEF9E23E806A5000489CD /* NotificationLeakViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,8 +177,8 @@
 			);
 			name = RxRetainTest;
 			packageProductDependencies = (
-				D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */,
-				D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */,
+				D9269FFA23D9C6F900CBFC9B /* RxSwift */,
+				D9269FFC23D9C6F900CBFC9B /* RxCocoa */,
 			);
 			productName = RxRetainTest;
 			productReference = D9269FE223D9C6BA00CBFC9B /* RxRetainTest.app */;
@@ -230,7 +233,7 @@
 			);
 			mainGroup = D9269FD923D9C6BA00CBFC9B;
 			packageReferences = (
-				D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */,
+				D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = D9269FE323D9C6BA00CBFC9B /* Products */;
 			projectDirPath = "";
@@ -349,7 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9269FE623D9C6BA00CBFC9B /* AppDelegate.swift in Sources */,
-				D916250823D9CF2D008F2F0C /* NoApparentLeakViewController.swift in Sources */,
+				D916250823D9CF2D008F2F0C /* FunctionParameterLeakViewController.swift in Sources */,
+				D9FCEF9F23E806A5000489CD /* NotificationLeakViewController.swift in Sources */,
 				D920495623DADC12008BBCD5 /* Presenter.swift in Sources */,
 				D9269FE823D9C6BA00CBFC9B /* SceneDelegate.swift in Sources */,
 				D926A00123D9CA7A00CBFC9B /* WeakReferenceLeakViewController.swift in Sources */,
@@ -619,7 +623,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */ = {
+		D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -630,14 +634,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D9269FFA23D9C6F900CBFC9B /* SwiftPackageProductDependency */ = {
+		D9269FFA23D9C6F900CBFC9B /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */;
+			package = D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		D9269FFC23D9C6F900CBFC9B /* SwiftPackageProductDependency */ = {
+		D9269FFC23D9C6F900CBFC9B /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9269FF923D9C6F900CBFC9B /* RemoteSwiftPackageReference */;
+			package = D9269FF923D9C6F900CBFC9B /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */

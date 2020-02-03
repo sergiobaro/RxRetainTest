@@ -17,9 +17,9 @@ class SomeViewControllerTests: QuickSpec {
             }
         }
         
-        describe("NoApparentLeakViewController") {
+        describe("FunctionParameterLeakViewController") {
             let vc = LeakTest {
-                return NoApparentLeakViewController()
+                return FunctionParameterLeakViewController()
             }
             it("must leak") {
                 expect(vc).to(leak())
@@ -28,7 +28,7 @@ class SomeViewControllerTests: QuickSpec {
         
         describe("WeakReferenceLeakViewController") {
             let vc = LeakTest {
-                return NoApparentLeakViewController()
+                return FunctionParameterLeakViewController()
             }
             it("must leak") {
                 expect(vc).to(leak())
@@ -37,7 +37,7 @@ class SomeViewControllerTests: QuickSpec {
         
         describe("TakeOneLeakViewController") {
             let vc = LeakTest {
-                return NoApparentLeakViewController()
+                return FunctionParameterLeakViewController()
             }
             it("must leak") {
                 expect(vc).to(leak())

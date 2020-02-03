@@ -83,7 +83,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="No Apparent Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mXu-YC-luZ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Function Parameter Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mXu-YC-luZ">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -116,6 +116,26 @@
                                             <segue destination="hCh-eT-0fl" kind="show" id="olR-3b-g7e"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="yNX-mf-ORs" style="IBUITableViewCellStyleDefault" id="FyP-hl-Pzw">
+                                        <rect key="frame" x="0.0" y="202" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FyP-hl-Pzw" id="IIf-Ez-hWh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Notification Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yNX-mf-ORs">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="LJN-1K-jy9" kind="show" id="Eck-7x-83d"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -133,7 +153,6 @@
         <!--Weak Reference Leak View Controller-->
         <scene sceneID="gOM-cU-0xG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-Ud-bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="N4Y-GD-VjE" customClass="WeakReferenceLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ytZ-OL-kCa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -143,6 +162,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="VvS-0Y-nmW"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-Ud-bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1710" y="-717"/>
         </scene>
@@ -162,11 +182,10 @@
             </objects>
             <point key="canvasLocation" x="1475" y="951"/>
         </scene>
-        <!--No Apparent Leak View Controller-->
+        <!--Function Parameter Leak View Controller-->
         <scene sceneID="j5h-AA-dNz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbD-G7-LMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="x3y-bg-iPm" customClass="NoApparentLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x3y-bg-iPm" customClass="FunctionParameterLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwR-UC-I5U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hA5-eC-EkT"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbD-G7-LMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="992"/>
         </scene>
@@ -206,6 +226,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRC-gm-uMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2333" y="639"/>
+        </scene>
+        <!--Notification Leak View Controller-->
+        <scene sceneID="Hhs-EO-a55">
+            <objects>
+                <viewController id="LJN-1K-jy9" customClass="NotificationLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWL-yk-HbX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pic-vZ-FG8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fuw-bB-Qh7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZE-4b-HR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3091" y="-61"/>
         </scene>
     </scenes>
 </document>

@@ -3,7 +3,7 @@ import RxSwift
 import LifetimeTracker
 
 
-class NoApparentLeakViewController: UIViewController, LifetimeTrackable {
+class FunctionParameterLeakViewController: UIViewController, LifetimeTrackable {
     
     private let presenter = Presenter()
     private let disposeBag = DisposeBag()
