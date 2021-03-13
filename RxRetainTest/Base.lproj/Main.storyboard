@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SmI-hN-tww">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SmI-hN-tww">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +34,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ngH-XO-kjm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection id="aI2-1n-5Cc">
                                 <cells>
@@ -116,14 +118,14 @@
                                             <segue destination="hCh-eT-0fl" kind="show" id="olR-3b-g7e"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="yNX-mf-ORs" style="IBUITableViewCellStyleDefault" id="FyP-hl-Pzw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="94A-zV-F8d" style="IBUITableViewCellStyleDefault" id="ap0-Z1-fxZ">
                                         <rect key="frame" x="0.0" y="202" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FyP-hl-Pzw" id="IIf-Ez-hWh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ap0-Z1-fxZ" id="BWl-9K-QBM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Notification Leak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yNX-mf-ORs">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Captures Itself" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94A-zV-F8d">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -133,7 +135,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="LJN-1K-jy9" kind="show" id="Eck-7x-83d"/>
+                                            <segue destination="QHe-Nj-EBm" kind="show" id="rKx-cY-Ba6"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -148,7 +150,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59d-vo-VXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="127"/>
+            <point key="canvasLocation" x="1026" y="127"/>
         </scene>
         <!--Weak Reference Leak View Controller-->
         <scene sceneID="gOM-cU-0xG">
@@ -157,14 +159,14 @@
                     <view key="view" contentMode="scaleToFill" id="ytZ-OL-kCa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lEW-uL-MlR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VvS-0Y-nmW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-Ud-bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="-717"/>
+            <point key="canvasLocation" x="2388" y="-777"/>
         </scene>
         <!--Strong Reference Leak View Controller-->
         <scene sceneID="Fue-XD-pIu">
@@ -173,14 +175,14 @@
                     <view key="view" contentMode="scaleToFill" id="d58-SN-0AQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1Gc-bk-qKk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="AMl-5k-4eL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAQ-dG-ZcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1475" y="951"/>
+            <point key="canvasLocation" x="383" y="942"/>
         </scene>
         <!--Function Parameter Leak View Controller-->
         <scene sceneID="j5h-AA-dNz">
@@ -189,14 +191,14 @@
                     <view key="view" contentMode="scaleToFill" id="nwR-UC-I5U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Dar-eR-cfw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="hA5-eC-EkT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbD-G7-LMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="992"/>
+            <point key="canvasLocation" x="1048" y="942"/>
         </scene>
         <!--Take One Leak View Controller-->
         <scene sceneID="1e5-Vp-c5I">
@@ -206,7 +208,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-yZ-tvf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-yZ-tvf">
                                 <rect key="frame" x="158" y="433" width="98" height="30"/>
                                 <state key="normal" title="Do Something"/>
                                 <connections>
@@ -214,34 +216,39 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sL4-gW-gb8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1oe-yZ-tvf" firstAttribute="centerY" secondItem="kJL-cg-lSr" secondAttribute="centerY" id="Qiq-pp-vmz"/>
                             <constraint firstItem="1oe-yZ-tvf" firstAttribute="centerX" secondItem="kJL-cg-lSr" secondAttribute="centerX" id="n8n-pm-vCj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sL4-gW-gb8"/>
                     </view>
                     <navigationItem key="navigationItem" id="g5C-iO-4OO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRC-gm-uMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333" y="639"/>
+            <point key="canvasLocation" x="2409" y="-111"/>
         </scene>
-        <!--Notification Leak View Controller-->
-        <scene sceneID="Hhs-EO-a55">
+        <!--Captures Itself View Controller-->
+        <scene sceneID="5sZ-oA-7jk">
             <objects>
-                <viewController id="LJN-1K-jy9" customClass="NotificationLeakViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pWL-yk-HbX">
+                <viewController id="QHe-Nj-EBm" customClass="CapturesItselfViewController" customModule="RxRetainTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJ5-li-jRp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="pic-vZ-FG8"/>
+                        <viewLayoutGuide key="safeArea" id="GMW-oN-abA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Fuw-bB-Qh7"/>
+                    <navigationItem key="navigationItem" id="MEH-rN-4a9"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NZE-4b-HR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQk-l2-mZC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3091" y="-61"/>
+            <point key="canvasLocation" x="1709" y="942"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

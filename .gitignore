@@ -1,2 +1,3 @@
-xcuserdata
+xcuserdata/
 Pods/
+xcode-build/
